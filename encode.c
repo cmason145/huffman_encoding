@@ -138,7 +138,7 @@ int main(int argc, char **argv) {
         fprintf(stdout, " bytes");
 
         fprintf(stdout, "\nSpace Saving: ");
-        fprintf(stdout, "%lu", (1 - (dststats.st_size / bytes_read)) * 100);
+        fprintf(stdout, "%lld", (1 - (dststats.st_size / bytes_read)) * 100);
         fprintf(stdout, " %%");
         fprintf(stdout, "\n");
     }
